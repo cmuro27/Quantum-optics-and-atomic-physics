@@ -1,0 +1,338 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12314,        330]
+NotebookOptionsPosition[     11382,        306]
+NotebookOutlinePosition[     11828,        323]
+CellTagsIndexPosition[     11785,        320]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Jaynes - Cumming model analysis", "Title",
+ CellChangeTimes->{{3.864589104833621*^9, 
+  3.864589120782432*^9}},ExpressionUUID->"f70e7727-e4f6-4281-a65f-\
+6a9142067c97"],
+
+Cell["C\[EAcute]sar Muro Cabral", "Text",
+ CellChangeTimes->{{3.864589137354685*^9, 
+  3.864589157980602*^9}},ExpressionUUID->"8b8a8d7a-358a-4656-b15c-\
+ea5de9ebea67"],
+
+Cell[TextData[{
+ "Two level model fully quantized Hamiltonian of a two level system \
+interacting with a single-mode cavity field where the zero enery is between \
+the levels. The dynamics of the wave function is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"|", " ", 
+     RowBox[{
+      RowBox[{"\[Psi]", " ", 
+       RowBox[{"(", "t", ")"}]}], "  ", ">"}]}], " ", "=", 
+    RowBox[{"|", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[Psi]", "g"], "(", "t", ")"}], ">"}], "|", 
+     RowBox[{"g", ">", "-"}]}]}], TraditionalForm]],ExpressionUUID->
+  "ccf0d7c2-1ce8-41b3-a341-dc05f8fe92aa"],
+ "|",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Psi]", "e"], TraditionalForm]],ExpressionUUID->
+  "5e506617-3d16-46b4-bfe0-f35af718189d"],
+ "(t)>|e>, where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"|", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[Psi]", "g"], "(", "t", ")"}], ">"}]}], " ", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "i"}], " ", 
+       RowBox[{
+        UnderoverscriptBox["\[Sum]", 
+         RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+        RowBox[{
+         SubscriptBox["C", "n"], 
+         RowBox[{"sin", "(", 
+          RowBox[{"\[Lambda]t", 
+           SqrtBox[
+            RowBox[{"n", "+", "1"}]]}], ")"}]}]}]}], "|", 
+      RowBox[{
+       RowBox[{"n", "+", "1"}], ">"}]}]}], ",", " ", "and"}], 
+   TraditionalForm]],ExpressionUUID->"f8c64387-a4ce-44ad-b74e-43a5c7b11961"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"|", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["\[Psi]", "e"], "(", "t", ")"}], ">"}]}], " ", "=", " ", 
+    RowBox[{
+     RowBox[{
+      UnderoverscriptBox["\[Sum]", 
+       RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+      RowBox[{
+       SubscriptBox["C", "n"], 
+       RowBox[{"cos", "(", 
+        RowBox[{"\[Lambda]t", 
+         SqrtBox[
+          RowBox[{"n", "+", "1"}]]}], ")"}]}]}], "|", 
+     RowBox[{"n", ">"}]}]}], TraditionalForm]],ExpressionUUID->
+  "e93fc87f-9158-4409-9063-d5830f0d9083"],
+ ". Thus the atomic inversion is given by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"W", 
+     RowBox[{"(", "t", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Pi", 
+       RowBox[{"(", "t", ")"}]}], "-", 
+      RowBox[{"Pf", "(", "t", ")"}]}], "=", " ", 
+     RowBox[{
+      UnderoverscriptBox["\[Sum]", 
+       RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+      RowBox[{"|", 
+       SubscriptBox["C", "n"], 
+       SuperscriptBox["|", "2"], 
+       RowBox[{"cos", "(", 
+        RowBox[{"2", "\[Lambda]t", 
+         SqrtBox[
+          RowBox[{"n", "+", "1"}]]}]}]}]}]}]}], TraditionalForm]],
+  ExpressionUUID->"7f172d8b-3d60-494e-820b-19cd054fae28"],
+ "), where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[CapitalOmega]", 
+     RowBox[{"(", "n", ")"}]}], "=", 
+    RowBox[{"2", "\[Lambda]", 
+     SqrtBox[
+      RowBox[{"n", "+", "1"}]], "is"}]}], TraditionalForm]],ExpressionUUID->
+  "a716b927-176f-4282-b823-f139f509a211"],
+ " the quantum electrodynamics Rabi frequency. For a coherent state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["C", "n"], "=", 
+    RowBox[{
+     SuperscriptBox["e", 
+      RowBox[{"-", 
+       RowBox[{"|", "\[Alpha]", 
+        SuperscriptBox["|", "2"], 
+        RowBox[{"/", "2"}]}]}]], 
+     FractionBox[
+      SuperscriptBox["\[Alpha]", "n"], 
+      SqrtBox[
+       RowBox[{"n", "!"}]]]}]}], TraditionalForm]],ExpressionUUID->
+  "db93a08c-0b59-4b8f-8143-4302c379552a"],
+ ", and the inversion is ",
+ Cell[BoxData[{
+  FormBox[
+   RowBox[{
+    RowBox[{"W", " ", 
+     RowBox[{"(", "t", ")"}]}], " ", "=", " ", 
+    SuperscriptBox["e", 
+     RowBox[{"-", "m"}]]}], TraditionalForm], "\n", 
+  FormBox[
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"n", "=", "0"}], "\[Infinity]"], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["m", "n"], "/", 
+       RowBox[{"n", "!"}]}], ")"}], 
+     RowBox[{"cos", "(", 
+      RowBox[{"2", "\[Lambda]t", 
+       SqrtBox[
+        RowBox[{"n", "+", "1"}]]}]}]}]}], TraditionalForm]}],ExpressionUUID->
+  "426e11bd-07e5-4b9b-8fc4-cce9c20535a8"],
+ ". Let us define T=\[Lambda]t."
+}], "Text",
+ CellChangeTimes->{{3.86458938595854*^9, 3.8645894733311543`*^9}, {
+   3.864590271082769*^9, 3.8645903170463552`*^9}, {3.8645904279147344`*^9, 
+   3.8645904483258023`*^9}, {3.8645905439921513`*^9, 
+   3.8645907872107925`*^9}, {3.8645918421061773`*^9, 
+   3.8645919864341908`*^9}, {3.8645920177225776`*^9, 
+   3.8645921533192873`*^9}, {3.8645922866959715`*^9, 
+   3.8645923074223843`*^9}, {3.8645923561991167`*^9, 3.864592379554524*^9}, {
+   3.864592639775996*^9, 3.8645926573014383`*^9}, {3.8645929580495567`*^9, 
+   3.864593095466236*^9}, {3.8645931270689588`*^9, 3.864593184857607*^9}, {
+   3.8645937814314103`*^9, 3.864593806168502*^9}, {3.864594106558428*^9, 
+   3.8645941103529034`*^9}, 
+   3.8645959911770077`*^9},ExpressionUUID->"87568547-a49d-4a3d-89da-\
+79ec1bdf27d5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Wi", "[", 
+   RowBox[{"m_", ",", "n_", ",", "T_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{"-", "m"}], "]"}], 
+   RowBox[{"Sum", "[", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       SuperscriptBox["m", "j"], 
+       RowBox[{"j", "!"}]], 
+      RowBox[{"Cos", "[", 
+       RowBox[{"2", "*", "T", 
+        SqrtBox[
+         RowBox[{"j", "+", "1"}]]}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "0", ",", "n"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.864593191922346*^9, 3.864593297577133*^9}, {
+   3.864593330301042*^9, 3.864593331174751*^9}, 3.864593380806385*^9, {
+   3.8645934824790335`*^9, 3.8645934847817316`*^9}, {3.8645937620665317`*^9, 
+   3.864593763135913*^9}, {3.8645941009331226`*^9, 3.864594102985717*^9}, {
+   3.8645941807858095`*^9, 3.8645941929265223`*^9}, {3.864594813598641*^9, 
+   3.864594814829096*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"273fe56c-3896-4bd5-bb4f-9a62fe6f568d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Wi", "[", 
+      RowBox[{"m", ",", "n", ",", "T"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"T", ",", "0", ",", "80"}], "}"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Scaled time \[Lambda]t\>\"", ",", 
+        "\"\<Atomic inversion population\>\""}], "}"}]}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"m", ",", "10", ",", "\"\<Mean number of phtons\>\""}], "}"}], 
+     ",", "10", ",", "100", ",", "5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "10", ",", "\"\<Number of the top of sum\>\""}], 
+      "}"}], ",", "10", ",", "200", ",", "10", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"SynchronousInitialization", "\[Rule]", "False"}], ",", " ", 
+   RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8645933043266573`*^9, 3.8645933450962644`*^9}, {
+  3.864593400782844*^9, 3.864593401817294*^9}, {3.8645941147913237`*^9, 
+  3.864594126986373*^9}, {3.864594199886074*^9, 3.8645942698985443`*^9}, {
+  3.8645944271321173`*^9, 3.8645945223474426`*^9}, {3.8645945618346596`*^9, 
+  3.864594610173828*^9}, {3.8645946457266235`*^9, 3.8645946495360622`*^9}, {
+  3.8645946799259443`*^9, 3.864594771067773*^9}, {3.864594903778814*^9, 
+  3.864594931943412*^9}, {3.8645949822023363`*^9, 3.8645950802747865`*^9}, {
+  3.86459514582714*^9, 3.8645951497857933`*^9}, {3.864595183316066*^9, 
+  3.8645951837987013`*^9}, {3.8645952170672464`*^9, 3.864595244880661*^9}, {
+  3.864595305074307*^9, 3.86459531076188*^9}, {3.864595731094692*^9, 
+  3.864595732463222*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"a1d679fa-3e49-48f0-9002-e1edef6e58d0"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`m$$ = 50, $CellContext`n$$ = 70, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`m$$], 10, "Mean number of phtons"}, 10, 100, 5}, {{
+       Hold[$CellContext`n$$], 10, "Number of the top of sum"}, 10, 200, 10}},
+     Typeset`size$$ = {360., {112., 117.35932571573798`}}, Typeset`update$$ = 
+    0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`m$$ = 10, $CellContext`n$$ = 10}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        $CellContext`Wi[$CellContext`m$$, $CellContext`n$$, $CellContext`T], \
+{$CellContext`T, 0, 80}, Frame -> True, 
+        FrameLabel -> {
+         "Scaled time \[Lambda]t", "Atomic inversion population"}, PlotRange -> 
+        All], "Specifications" :> {{{$CellContext`m$$, 10, 
+          "Mean number of phtons"}, 10, 100, 5, Appearance -> 
+         "Labeled"}, {{$CellContext`n$$, 10, "Number of the top of sum"}, 10, 
+         200, 10, Appearance -> "Labeled"}}, 
+      "Options" :> {
+       SynchronousInitialization -> False, SynchronousUpdating -> False}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{753., {143.13403328722342`, 148.86596671277658`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->False,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.8645933506114902`*^9, 3.8645934607230535`*^9, 
+  3.8645937584156523`*^9, 3.864594129367011*^9, 3.8645947783069386`*^9, 
+  3.8645950814001265`*^9, 3.8645952578815355`*^9, 3.864595321644495*^9, 
+  3.8645957450850124`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"6ac5eadc-fab6-4561-a861-e27eca0d1fab"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1141.2, 573.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"32ff0e17-43f5-42d3-aaec-29dbe2e182d0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 174, 3, 98, "Title",ExpressionUUID->"f70e7727-e4f6-4281-a65f-6a9142067c97"],
+Cell[757, 27, 167, 3, 35, "Text",ExpressionUUID->"8b8a8d7a-358a-4656-b15c-ea5de9ebea67"],
+Cell[927, 32, 4933, 150, 148, "Text",ExpressionUUID->"87568547-a49d-4a3d-89da-79ec1bdf27d5"],
+Cell[5863, 184, 991, 25, 51, "Input",ExpressionUUID->"273fe56c-3896-4bd5-bb4f-9a62fe6f568d"],
+Cell[CellGroupData[{
+Cell[6879, 213, 2034, 41, 67, "Input",ExpressionUUID->"a1d679fa-3e49-48f0-9002-e1edef6e58d0"],
+Cell[8916, 256, 2438, 46, 311, "Output",ExpressionUUID->"6ac5eadc-fab6-4561-a861-e27eca0d1fab"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
