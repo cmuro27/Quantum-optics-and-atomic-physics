@@ -5,4 +5,5 @@
 -Electromagnetically induced transparency in Rubidium 87 in a Lambda model and light storage.  
 -Excitation dynamics of interacting Rydberg atoms in small lattices employing Ising model.  
   
-To download the mathematica files (nb format) click on raw, then right clik and select as 
+To download the mathematica files (nb format) click on the raw tab, then right clik and select "Save as... (P) ",  
+select the download folder and at "Type" choose "All Files".  
