@@ -20121,10 +20121,7 @@ Cell["Relevant bibliography", "Section",
 c72005692531"],
 
 Cell["\<\
-1. B. Olmos, M. M\[UDoubleDot]ller, and I. Lesanovsky.  (2010) \
-.Thermalization of a strongly interacting 1D Rydberg lattice gas. New Journal \
-of Physics, 12(1), 013024.
-2. Wu, G., Kurz, M., Liebchen, B., & Schmelcher, P. (2015). Excitation \
+1. Wu, G., Kurz, M., Liebchen, B., & Schmelcher, P. (2015). Excitation \
 dynamics of interacting Rydberg atoms in small lattices. Physics Letters A, \
 379(3), 143-148. \
 \>", "Text",
