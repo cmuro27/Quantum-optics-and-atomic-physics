@@ -7,3 +7,11 @@
   
 To download the mathematica files (nb format) click on the file, click on the "raw" tab, then right clik and select "Save as... (P) ",  
 select the download folder and at "Type" choose "All Files".  
+
+<div class="row">
+  <div class="column" align="center">
+    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/densievolv2-1.png" height="150" style="width:60%">
+    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/eit_three_level.png" height="150" style="width:60%">
+    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/dynamics_ising.png" height="150" style="width:60%">
+  </div>
+</div> 
