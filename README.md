@@ -10,8 +10,8 @@ select the download folder and at "Type" choose "All Files".
 
 <div class="row">
   <div class="column" align="center">
-    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/densievolv2-1.png" height="80" style="width:35%">
-    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/eit_three_level.png" height="80" style="width:35%">
-    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/dynamics_ising.png" height="80" style="width:35%">
+    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/densievolv2-1.png" height="100" style="width:32%">
+    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/eit_three_level.png" height="100" style="width:32%">
+    <img src="https://raw.githubusercontent.com/cmuro27/Quantum-optics-and-atomic-physics/main/some_images/dynamics_ising.png" height="100" style="width:32%">
   </div>
 </div> 
